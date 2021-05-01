@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Guid>2fce1349-c0df-46d0-85b3-f456bebe4f70</Guid>
+    <Name>Better Promotion Photos</Name>
+    <Description>Improves the automatically-generated Promotion Photos.</Description>
+    <SteamPublishID>0</SteamPublishID>
+    <AssemblyName>BetterPromotionPhotos</AssemblyName>
+    <RootNamespace>BetterPromotionPhotos</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Config\" />
+    <Folder Include="Localization\" />
+    <Folder Include="Src\" />
+    <Folder Include="Src\BetterPromotionPhotos\" />
+    <Folder Include="Src\BetterPromotionPhotos\Classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ReadMe.txt" />
+    <Content Include="ModPreview.jpg" />
+    <Content Include="Config\XComEditor.ini" />
+    <Content Include="Config\XComEngine.ini" />
+    <Content Include="Config\XComGame.ini" />
+    <Content Include="Localization\XComGame.int" />
+    <Content Include="Src\BetterPromotionPhotos\Classes\X2DownloadableContentInfo_BetterPromotionPhotos.uc" />
+    <Content Include="Src\BetterPromotionPhotos\Classes\X2Photobooth_StrategyAutoGen_Override.uc">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
+</Project>
