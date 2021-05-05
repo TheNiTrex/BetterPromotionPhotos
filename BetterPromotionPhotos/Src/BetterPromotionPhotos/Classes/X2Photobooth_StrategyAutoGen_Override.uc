@@ -28,6 +28,7 @@ function TakePhoto() // Function Override
 		case ePBTLS_PromotedSoldier:
 			AutoGenSettings.CameraPresetDisplayName = "Full Frontal";
 			AutoGenSettings.BackgroundDisplayName = GetXCOMBackgroundName(); // Add random XCOM background poster
+			`PHOTOBOOTH.SetBackgroundColorOverride(false);
 			break;
 		case ePBTLS_BondedSoldier:
 			Unit = XComGameState_Unit(`XCOMHISTORY.GetGameStateForObjectID(ExecutingAutoGenRequest.UnitRef.ObjectID));
